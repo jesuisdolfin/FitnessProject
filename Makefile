@@ -8,7 +8,7 @@ dropdb:
 	docker exec -it mysql dropdb fitnessdb
 
 migrateup:
-	migrate -path db/migration -database "postresql://root:secret@localhost:5432/fitnessdb?sslmode=disable" -verbose up
+	migrate -path db/migration -database "postgresql://root:secret@localhost:5432/fitnessdb?sslmode=disable" -verbose up
 
 migratedown:
 	migrate -path db/migration -database "postgresql://root:secret@localhost:5432/fitnessdb?sslmode=disable" -verbose down
