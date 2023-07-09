@@ -2,10 +2,10 @@ postgres:
 	docker run --name postgres12 -e POSTGRES_USER=root -e POSTGRES_PASSWORD=secret -p 5432:5432 -d postgres:12-alpine
 
 createdb:
-	docker exec -it mysql createdb --username=root --owner=root fitnessdb
+	docker exec -it fitnessdb createdb --username=root --owner=root fitnessdb
 
 dropdb:
-	docker exec -it mysql dropdb fitnessdb
+	docker exec -it fitnessdb dropdb fitnessdb
 
 migrateup:
 	migrate -path db/migration -database "postgresql://root:secret@localhost:5432/fitnessdb?sslmode=disable" -verbose up
