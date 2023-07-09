@@ -12,7 +12,7 @@ CREATE TABLE "liftentries" (
   "user_id" bigint NOT NULL,
   "weight_lifted" decimal NOT NULL,
   "reps" bigint NOT NULL,
-  "create_at" timestamptz NOT NULL DEFAULT (now())
+  "created_at" timestamptz NOT NULL DEFAULT (now())
 );
 
 CREATE INDEX ON "user_data" ("name");
