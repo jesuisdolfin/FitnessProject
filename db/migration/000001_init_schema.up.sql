@@ -9,7 +9,7 @@ CREATE TABLE "user_data" (
 
 CREATE TABLE "liftentries" (
   "id" bigserial PRIMARY KEY,
-  "user_id" bigint NOT NULL,
+  "user_id" bigserial NOT NULL,
   "weight_lifted" decimal NOT NULL,
   "reps" bigint NOT NULL,
   "created_at" timestamptz NOT NULL DEFAULT (now())

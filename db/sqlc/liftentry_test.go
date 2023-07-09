@@ -13,8 +13,10 @@ import (
 
 func createRandomLiftentry(t *testing.T) Liftentry {
 
+	user1 := createRandomUser(t)
+
 	arg := CreateLiftentryParams{
-		UserID: "69",
+		UserID: fmt.Sprint(user1.ID),
 		WeightLifted: util.RandomWeightLifted(),
 		Reps: fmt.Sprint(util.RandomReps()),
 	}
