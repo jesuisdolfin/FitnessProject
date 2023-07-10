@@ -1,4 +1,4 @@
-module goproject
+module FitnessProject
 
 go 1.20
 

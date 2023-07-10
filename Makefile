@@ -19,6 +19,9 @@ sqlc:
 test:
 	go test -v -cover -short ./...
 
+server:
+	go run main.go
+
 #docker status for all containers
 #docker ps -a
 

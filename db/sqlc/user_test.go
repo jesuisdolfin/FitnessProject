@@ -4,7 +4,7 @@ import (
 	"context"
 	"database/sql"
 	"fmt"
-	"goproject/util"
+	"github.com/jesuisdolfin/FitnessProject/util"
 	"testing"
 	"time"
 
