@@ -2,7 +2,6 @@ package api
 
 import (
 	"net/http"
-
 	db "FitnessProject/db/sqlc"
 	"github.com/gin-gonic/gin"
 )
@@ -12,7 +11,7 @@ type createUserRequest struct {
 	Name string `json:"name" binding:"required"`
 	Weight string `json:"weight" binding:"required"`
 	Height string `json:"height" binding:"required"`
-	Age int64 `json:"age" binding:"required"`
+	Age string `json:"age" binding:"required"`
 }
 
 func (server *Server) createUser(ctx *gin.Context) {

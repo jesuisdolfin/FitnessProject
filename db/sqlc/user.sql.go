@@ -23,7 +23,7 @@ type CreateUserParams struct {
 	Name string `json:"name"`
 	Weight string `json:"weight"`
 	Height string `json:"height"`
-	Age int64 `json:"age"`
+	Age string `json:"age"`
 }
 
 func (q *Queries) CreateUser(ctx context.Context, arg CreateUserParams) (UserData, error) {

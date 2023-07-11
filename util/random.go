@@ -40,8 +40,8 @@ func RandomHeight() string {
 	return fmt.Sprint(RandomInt(0, 80))
 }
 
-func RandomAge() int64 {
-	return RandomInt(0, 95)
+func RandomAge() string {
+	return fmt.Sprint(RandomInt(0, 95))
 }
 
 func RandomWeightLifted() string {
