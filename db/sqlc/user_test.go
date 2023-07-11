@@ -4,7 +4,7 @@ import (
 	"context"
 	"database/sql"
 	"fmt"
-	"github.com/jesuisdolfin/FitnessProject/util"
+	"FitnessProject/util"
 	"testing"
 	"time"
 

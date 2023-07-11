@@ -1,15 +1,13 @@
 package main
 
 import (
-	"fmt"
-	"net/http"
-
-	db "github.com/jesuisdolfin/FitnessProject/db/sqlc"
-	api "github.com/jesuisdolfin/FitnessProject/api"
+	//"fmt"
+	db "FitnessProject/db/sqlc"
+	api "FitnessProject/api"
 	"database/sql"
 	"log"
 	_ "github.com/lib/pq"
-	"github.com/gin-gonic/gin"
+	//"github.com/gin-gonic/gin"
 )
 
 const (

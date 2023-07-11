@@ -3,7 +3,7 @@ package api
 import (
 	"net/http"
 
-	db "github.com/jesuisdolfin/FitnessProject/db/sqlc"
+	db "FitnessProject/db/sqlc"
 	"github.com/gin-gonic/gin"
 )
 
@@ -13,6 +13,7 @@ type createUserRequest struct {
 	Weight string `json:"weight" binding:"required"`
 	Height string `json:"height" binding:"required"`
 }
+
 func (server *Server) createUser(ctx *gin.Context) {
 	var req createUserRequest
 	if err := ctx.ShouldBindJSON(&req); err != nil {
@@ -34,3 +35,5 @@ func (server *Server) createUser(ctx *gin.Context) {
 
 	ctx.JSON(http.StatusOK, user)
 }
+
+

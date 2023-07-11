@@ -3,7 +3,7 @@ CREATE TABLE "user_data" (
   "name" varchar NOT NULL,
   "weight" decimal NOT NULL,
   "height" decimal NOT NULL,
-  "age" bigint NOT NULL,
+  "age" int NOT NULL,
   "created_at" timestamptz NOT NULL DEFAULT (now())
 );
 
@@ -11,7 +11,7 @@ CREATE TABLE "liftentries" (
   "id" bigserial PRIMARY KEY,
   "user_id" bigserial NOT NULL,
   "weight_lifted" decimal NOT NULL,
-  "reps" bigint NOT NULL,
+  "reps" int NOT NULL,
   "created_at" timestamptz NOT NULL DEFAULT (now())
 );
 

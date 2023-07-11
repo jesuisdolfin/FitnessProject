@@ -1,14 +1,13 @@
 package api
 
 import (
-	"fmt"
+	//"fmt"
 
 	"github.com/gin-gonic/gin"
-	"github.com/gin-gonic/gin/binding"
-	"github.com/go-playground/validator/v10"
-	db "github.com/jesuisdolfin/FitnessProject/db/sqlc"
-	"github.com/jesuisdolfin/FitnessProject/token"
-	"github.com/jesuisdolfin/FitnessProject/util"
+	//"github.com/gin-gonic/gin/binding"
+	//"github.com/go-playground/validator/v10"
+	db "FitnessProject/db/sqlc"
+	//"FitnessProject/util"
 
 )
 
