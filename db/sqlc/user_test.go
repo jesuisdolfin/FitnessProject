@@ -16,7 +16,7 @@ func createRandomUser(t *testing.T) UserData {
 		Name: util.RandomName(),
 		Weight: fmt.Sprint(util.RandomWeight()),
 		Height: fmt.Sprint(util.RandomHeight()),
-		Age: fmt.Sprint(util.RandomAge()),
+		Age: util.RandomAge(),
 	}
 
 	user, err := testQueries.CreateUser(context.Background(), arg)
