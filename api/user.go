@@ -9,9 +9,9 @@ import (
 
 type createUserRequest struct {
 	Name string `json:"name" binding:"required"`
-	Weight string `json:"weight" binding:"required"`
-	Height string `json:"height" binding:"required"`
-	Age string `json:"age" binding:"required"`
+	// Weight string `json:"weight" binding:"required"`
+	// Height string `json:"height" binding:"required"`
+	// Age string `json:"age" binding:"required"`
 }
 
 func (server *Server) createUser(ctx *gin.Context) {
@@ -23,9 +23,9 @@ func (server *Server) createUser(ctx *gin.Context) {
 
 	arg := db.CreateUserParams{
 		Name: req.Name,
-		Weight: req.Weight,
-		Height: req.Height,
-		Age: req.Age,
+		// Weight: req.Weight,
+		// Height: req.Height,
+		// Age: req.Age,
 	}
 
 	user, err := server.store.CreateUser(ctx, arg)
